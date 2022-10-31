@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--very-light-gray);
+}
+
+/* Header Section */
+
+header {
+    text-align: center;
+}
+
+header .top {
+    margin-top: 6rem;
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: black;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+header p {
+    width: 35rem;
+    margin: 0 auto;
+    color: var(--grayish-blue);
+}
+
+/* Cards Section */
+
+main {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    width: 25rem;
+    padding: 2rem;
+    box-shadow: 0px 8px 15px 5px #e6e6e6;
+    border-radius: 0.8rem;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: var(--grayish-blue);
+}
+
+.left-card {
+    display: flex;
+    align-items: center;
+}
+
+.middle-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.right-card {
+    display: flex;
+    align-items: center;
+}
+
+.supervisor {
+    border-top: 5px solid var(--cyan);
+}
+
+.team-builder {
+    border-top: 5px solid var(--red);
+}
+
+.karma {
+    border-top: 5px solid var(--orange);
+}
+
+.calculator {
+    border-top: 5px solid var(--blue);
+}
+
+img {
+    margin-top: 5rem;
+    float: right;
+}
+
+/* Mobile Design */
+
+@media only screen and (max-width: 1400px) {
+    /* Header Section */
+
+    header .top {
+        font-size: 1.4rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    header p {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    /* Cards Section */
+
+    main {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .card h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
+
+    .calculator {
+        margin-bottom: 5rem;
+    }
+}
